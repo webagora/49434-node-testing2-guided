@@ -56,6 +56,8 @@ test('[1] NODE_ENV is correct', () => {
         expect(theNewThing).toMatchObject({ id: 5, name: 'bilbo' })
       })
 
-      test.todo('[6] resolves the newly created hobbit')
+      test('[6] resolves the newly created hobbit', async () => {
+        expect(result).toMatchObject({ id: 5, name: 'bilbo' })
+      })
     })
   })
