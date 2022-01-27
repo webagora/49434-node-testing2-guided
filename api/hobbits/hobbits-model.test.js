@@ -1,3 +1,3 @@
 test('NODE_ENV is correct', () => {
-  expect(NODE_ENV).toBe('testing')
+  expect(process.env.NODE_ENV).toBe('testing')
 })
