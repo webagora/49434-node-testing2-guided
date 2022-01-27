@@ -57,7 +57,7 @@ describe('Hobbit model', () => {
       expect(theNewThing).toMatchObject({ id: 5, name: 'bilbo' })
     })
     test('resolves the newly created hobbit', async () => {
-      // ?
+      expect(result).toMatchObject({ id: 5, name: 'bilbo' })
     })
   })
 })
