@@ -49,5 +49,12 @@ describe('Hobbit model', () => {
     beforeEach(async () => {
       result = await Hobbit.insert(bilbo)
     })
+
+    test('db updates with the new hobbit', async () => {
+
+    })
+    test('resolves the newly created hobbit', async () => {
+
+    })
   })
 })
