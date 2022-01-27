@@ -37,6 +37,9 @@ describe('Hobbit model', () => {
       sam = await Hobbit.getById(1)
       frodo = await Hobbit.getById(2)
     })
-    test('returns the correct Hobbit')
+    test('returns the correct Hobbit', () => {
+      expect(sam)
+      //
+    })
   })
 })
