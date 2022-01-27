@@ -22,5 +22,10 @@ describe('GET /hobbits', () => {
     const res = await request(server).get('/hobbits')
     expect(res.status).toBe(200)
   })
-  test('POST /hobbits')
+})
+describe('POST /hobbits', () => {
+  test('returns a status 201 Created', async () => {
+    const res = await request(server).get('/hobbits')
+    expect(res.status).toBe(200)
+  })
 })
