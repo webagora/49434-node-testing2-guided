@@ -17,4 +17,8 @@ afterAll(async () => {
   await db.destroy()
 })
 
-describe('GET /hobbits')
+describe('GET /hobbits', () => {
+  test('returns a status 200 OK', async () => {
+    //
+  })
+})
