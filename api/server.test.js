@@ -1,6 +1,8 @@
 // even if you are only testing a route
 // even if you are testing only a single endpoint
 // IMPORT THE WHOLE SERVER.JS!!!!!!
+
+const request = require('supertest')
 const server = require('./server')
 const db = require('../../data/dbConfig')
 
