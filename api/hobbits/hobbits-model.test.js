@@ -35,7 +35,8 @@ describe('Hobbit model', () => {
     let sam, frodo
     beforeEach(async () => {
       sam = await Hobbit.getById(1)
-      frodo = await obbit.getById(1)
+      frodo = await Hobbit.getById(2)
     })
+    test('returns the correct Hobbit')
   })
 })
