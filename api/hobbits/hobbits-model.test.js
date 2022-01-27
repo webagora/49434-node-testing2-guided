@@ -39,6 +39,7 @@ describe('Hobbit model', () => {
     })
     test('returns the correct Hobbit', () => {
       expect(sam).toMatchObject({ id: 1, name: 'sam' })
+      expect(frodo).toMatchObject({ id: 2, name: 'frodo' })
     })
   })
 })
