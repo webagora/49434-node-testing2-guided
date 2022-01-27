@@ -1,3 +1,3 @@
 test('NODE_ENV is correct', () => {
-  // you?
+  expect(NODE_ENV).toBe('testing')
 })
