@@ -18,7 +18,10 @@ test('[1] NODE_ENV is correct', () => {
 
   describe('Hobbit model', () => {
     describe('Hobbit.getAll()', () => { 
-      test.todo('[2] returns all hobbits in table')
+      test('[2] returns all hobbits in table', async () => {
+        const hobbits = await Hobbit.getAll()
+        expect(hobbits).toHaveLength(4)
+      })
       test.todo('[3] returned hobbits have id and name')
     })
 
