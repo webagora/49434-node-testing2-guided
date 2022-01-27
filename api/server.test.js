@@ -20,6 +20,6 @@ afterAll(async () => {
 describe('GET /hobbits', () => {
   test('returns a status 200 OK', async () => {
     const res = await request(server).get('/')
-    e
+    expect(res.status).toBe(200)
   })
 })
