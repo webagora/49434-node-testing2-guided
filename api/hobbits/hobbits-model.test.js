@@ -22,7 +22,7 @@ describe('Hobbit model', () => {
     test('returns all hobbits in table', () => {
       // hit the db with getAll, store result
       // assert that result is [] of length 4
-      expect()
+      expect(Hobbit.)
     })
   })
 })
