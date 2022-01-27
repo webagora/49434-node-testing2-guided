@@ -9,6 +9,9 @@ beforeAll(async () => {
   await db.migrate.rollback()
   await db.migrate.latest()
 })
+beforeEach(async () => {
+  
+})
 
 describe('Hobbit model', () => {
 
