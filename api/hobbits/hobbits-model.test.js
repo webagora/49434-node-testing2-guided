@@ -38,8 +38,7 @@ describe('Hobbit model', () => {
       frodo = await Hobbit.getById(2)
     })
     test('returns the correct Hobbit', () => {
-      expect(sam)
-      //
+      expect(sam).toMatchObject({ id: 1, name: 'sam' })
     })
   })
 })
