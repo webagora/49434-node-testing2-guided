@@ -9,7 +9,7 @@ module.exports = {
 }
 
 function getAll() {
-  return db('hobbit')
+  return db('hobbits')
 }
 
 function getById(id) {
