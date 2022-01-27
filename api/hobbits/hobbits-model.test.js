@@ -30,4 +30,6 @@ describe('Hobbit model', () => {
       expect(hobbits[0]).toMatchObject({ id: 1, name: 'sam' })
     })
   })
+
+  describe('Hobbit.getById(id')
 })
