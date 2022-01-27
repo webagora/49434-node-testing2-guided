@@ -10,7 +10,7 @@ beforeAll(async () => {
   await db.migrate.latest()
 })
 beforeEach(async () => {
-  
+  await db.seed.run()
 })
 
 describe('Hobbit model', () => {
