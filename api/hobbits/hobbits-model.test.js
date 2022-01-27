@@ -32,9 +32,10 @@ describe('Hobbit model', () => {
   })
 
   describe('Hobbit.getById(id)', () => {
-    let hobbit
+    let sam, frodo
     beforeEach(async () => {
-      hobbit = await Hobbit.getById(1)
+      sam = await Hobbit.getById(1)
+      frodo = await obbit.getById(1)
     })
   })
 })
