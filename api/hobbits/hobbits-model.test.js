@@ -23,7 +23,7 @@ describe('Hobbit model', () => {
       // hit the db with getAll, store result
       // assert that result is [] of length 4
       const hobbits = await Hobbit.getAll()
-      expect(hobbits).toHaveLength(4)
+      expect(hobbits).toHaveLength(5)
     })
   })
 })
