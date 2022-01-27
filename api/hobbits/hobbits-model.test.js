@@ -19,6 +19,7 @@ afterAll(async () => {
 describe('Hobbit model', () => {
 
   describe('Hobbit.getAll()', () => {
-
+    // hit the db with getAll, store result
+    // assert that result is [] of length 4
   })
 })
