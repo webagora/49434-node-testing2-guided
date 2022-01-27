@@ -43,7 +43,19 @@ test('[1] NODE_ENV is correct', () => {
     })
 
     describe('Hobbit.insert(hobbit)', () => { 
-      test.todo('[5] db updates with the new hobbit')
+      let bilbo = { name: 'bilbo' }
+      let result
+      beforeEach( async () => {
+        result = await Hobbit.insert(bilbo)
+      })
+
+      test('[5] db updates with the new hobbit', async () => {
+        const theNewThing = await db('hobbits')
+          .where('id', 5)
+          .first()
+        expect(theNewThing).toMatchObject({ id: 5, name: 'bilbo' })
+      })
+
       test.todo('[6] resolves the newly created hobbit')
     })
   })
