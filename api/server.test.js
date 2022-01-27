@@ -28,6 +28,6 @@ describe('POST /hobbits', () => {
     const res = await request(server)
       .post('/hobbits')
       .send({ name: 'bilbo' })
-    expect(res.status).toBe(200)
+    expect(res.status).toBe(201)
   })
 })
