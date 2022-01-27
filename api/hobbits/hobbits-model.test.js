@@ -31,7 +31,15 @@ test('[1] NODE_ENV is correct', () => {
     })
 
     describe('Hobbit.getById(id)', () => { 
-      test.todo('[4] returns the correct Hobbit')
+      let sam, frodo
+      beforeEach(async () => {
+        sam = await Hobbit.getById(1)
+        frodo = await Hobbit.getById(2)
+      })
+      test('[4] returns the correct Hobbit', () => {
+        expect(sam).toMatchObject({ id: 1, name: 'sam' })
+        expect(frodo).toMatchObject({ id: 2, name: 'frodo' })
+      })
     })
 
     describe('Hobbit.insert(hobbit)', () => { 
