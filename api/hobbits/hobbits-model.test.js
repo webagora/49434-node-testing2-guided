@@ -19,6 +19,10 @@ afterAll(async () => {
 describe('Hobbit model', () => {
 
   describe('Hobbit.getAll()', () => {
+    let hobbits
+    beforeEach(async () => {
+      hobbits = await Hobbit.getAll()
+    })
     test('returns all hobbits in table', async () => {
       // hit the db with getAll, store result
       // assert that result is [] of length 4
