@@ -18,11 +18,16 @@ test('[1] NODE_ENV is correct', () => {
 
   describe('Hobbit model', () => {
     describe('Hobbit.getAll()', () => { 
-      test('[2] returns all hobbits in table', async () => {
-        const hobbits = await Hobbit.getAll()
+      let hobbits
+      beforeEach(async () => {
+        hobbits = await Hobbit.getAll()
+      })
+      test('[2] returns all hobbits in table',  () => {        
         expect(hobbits).toHaveLength(4)
       })
-      test.todo('[3] returned hobbits have id and name')
+      test('[3] returned hobbits have id and name', () => {
+        expect(hobbits[0]).toMatchObject({ id: 1, name: 'sam' })
+      })
     })
 
     describe('Hobbit.getById(id)', () => { 
