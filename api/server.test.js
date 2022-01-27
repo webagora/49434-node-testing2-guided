@@ -30,5 +30,7 @@ describe('POST /hobbits', () => {
       .send({ name: 'bilbo' })
     expect(res.status).toBe(201)
   })
-  test
+  test('returns the new hobbit', async () => {
+    // you!!!
+  })
 })
