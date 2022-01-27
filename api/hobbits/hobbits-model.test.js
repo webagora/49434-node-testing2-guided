@@ -23,11 +23,11 @@ describe('Hobbit model', () => {
     beforeEach(async () => {
       hobbits = await Hobbit.getAll()
     })
-    test('returns all hobbits in table', async () => {
+    test('returns all hobbits in table', () => {
       expect(hobbits).toHaveLength(4)
     })
-    test('returned hobbits have id and name', async () => {
-      expect(hobbits[0]).toMatchObject({ name: 'sam' })
+    test('returned hobbits have id and name', () => {
+      expect(hobbits[0]).toMatchObject({ id: 1, name: 'sam' })
     })
   })
 })
