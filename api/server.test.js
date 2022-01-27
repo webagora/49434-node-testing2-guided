@@ -18,8 +18,10 @@ afterAll(async () => {
 })
 
 describe('GET /hobbits', () => {
-  test.todo('[7] returns a status 200 OK')
-    
+  test('[7] returns a status 200 OK', async () => {
+    const res = await request(server).get('/hobbits')
+    expect(res.status).toBe(200)
+  })
 })
 describe('POST /hobbits', () => {
   test.todo('[8] returns a status 201 Created')
