@@ -8,3 +8,9 @@ test('NODE_ENV is correct', () => {
 beforeAll(async () => {
 
 })
+
+
+describe('Hobbit model', () => {
+
+  describe('Hobbit.get()')
+})
