@@ -54,7 +54,7 @@ describe('Hobbit model', () => {
       const theNewThing = await db('hobbit')
         .where('id', 5)
         .first()
-      expect(theNewThing)
+      expect(theNewThing).toMatchObject({ id: 5, name: 'bilbo' })
     })
     test('resolves the newly created hobbit', async () => {
       // ?
