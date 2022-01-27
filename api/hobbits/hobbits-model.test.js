@@ -51,10 +51,10 @@ describe('Hobbit model', () => {
     })
 
     test('db updates with the new hobbit', async () => {
-
+      // ?
     })
     test('resolves the newly created hobbit', async () => {
-
+      // ?
     })
   })
 })
