@@ -24,13 +24,9 @@ describe('Hobbit model', () => {
       hobbits = await Hobbit.getAll()
     })
     test('returns all hobbits in table', async () => {
-      // hit the db with getAll, store result
-      // assert that result is [] of length 4
-      const hobbits = await Hobbit.getAll()
       expect(hobbits).toHaveLength(4)
     })
     test('returned hobbits have id and name', async () => {
-      const hobbits = await Hobbit.getAll()
       expect(hobbits[0]).toMatchObject({ name: 'sam' })
     })
   })
