@@ -51,7 +51,7 @@ describe('Hobbit model', () => {
     })
 
     test('db updates with the new hobbit', async () => {
-      // Hobbit.getById(id)
+      const theNewThing = await db('hobbit').where('id')
     })
     test('resolves the newly created hobbit', async () => {
       // ?
