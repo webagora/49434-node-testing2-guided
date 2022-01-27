@@ -42,4 +42,8 @@ describe('Hobbit model', () => {
       expect(frodo).toMatchObject({ id: 2, name: 'frodo' })
     })
   })
+
+  describe('Hobbit.insert(hobbit)', () => {
+    let 
+  })
 })
