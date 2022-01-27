@@ -12,6 +12,9 @@ beforeAll(async () => {
 beforeEach(async () => {
   await db.seed.run()
 })
+afterAll(async () => {
+  await db.destroy()
+})
 
 describe('Hobbit model', () => {
 
