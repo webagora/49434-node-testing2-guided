@@ -27,7 +27,7 @@ describe('Hobbit model', () => {
     })
     test('returned hobbits have id and name', async () => {
       const [sam] = await Hobbit.getAll()
-      expect()
+      expect(sam).toMatchObject({ name: 'frodo' })
     })
   })
 })
