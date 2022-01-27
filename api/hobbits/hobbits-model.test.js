@@ -46,7 +46,7 @@ describe('Hobbit model', () => {
   describe('Hobbit.insert(hobbit)', () => {
     let bilbo = { name: 'bilbo' }
     beforeEach(async () => {
-      
+      Hobbit.insert(bilbo)
     })
   })
 })
