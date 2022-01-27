@@ -6,10 +6,10 @@ test('NODE_ENV is correct', () => {
 })
 
 beforeAll(async () => {
-})
-beforeEach(async () => {
   await db.migrate.rollback()
   await db.migrate.latest()
+})
+beforeEach(async () => {
   await db.seed.run()
 })
 
