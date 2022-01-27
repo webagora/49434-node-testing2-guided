@@ -34,7 +34,7 @@ describe('Hobbit model', () => {
   describe('Hobbit.getById(id)', () => {
     let hobbit
     beforeEach(async () => {
-      hobbit = await Hobbit.getAll()
+      hobbit = await Hobbit.getById(1)
     })
   })
 })
